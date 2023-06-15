@@ -24,12 +24,12 @@
 					<span class="flex-1 ml-3 whitespace-nowrap">케이뱅크</span>
 				</a>
 			</li>
-			<li>
+			<!--<li>
 				<a href="#" class="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow">
 					<img class="w-5" src="https://play-lh.googleusercontent.com/MHcnAJN4aqVymRwBjS5TOQ5WvPFHoKgG6cgRkWICXJDfAq94vMbX9r90BWcg0nosAoAJ=w240-h480-rw">
 					<span class="flex-1 ml-3 whitespace-nowrap">수협은행</span>
 				</a>
-			</li>
+			</li>-->
 		</ul>
 		<div>
 			<a href="#" class="inline-flex items-center text-xs font-normal text-gray-500 hover:underline">
