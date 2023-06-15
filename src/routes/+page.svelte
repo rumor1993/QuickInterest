@@ -13,13 +13,13 @@
 				</a>
 			</li>
 			<li>
-				<a href="#" class="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow">
+				<a href="/kakao" class="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow">
 					<img class="w-5" src="https://t1.daumcdn.net/cfile/tistory/997BD7335D089C3023">
 					<span class="flex-1 ml-3 whitespace-nowrap">카카오뱅크</span>
 				</a>
 			</li>
 			<li>
-				<a href="#" class="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow">
+				<a href="/kbank" class="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow">
 					<img class="w-5" src="https://play-lh.googleusercontent.com/nfphbnXEbNaL_BqRrU97IWCEnuHz6rBE5VHztahXk4cDE3Ag8MxRImhfF9plwrtylLg=w240-h480-rw">
 					<span class="flex-1 ml-3 whitespace-nowrap">케이뱅크</span>
 				</a>
