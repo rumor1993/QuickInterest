@@ -12,6 +12,7 @@
 <section>
     <div class="m-auto mt-5 w-full max-w-sm p-4 bg-white sm:p-6">
         <h3 class="text-2xl mb-3 text-base font-semibold text-gray-900 md:text-xl">
+            <img class="inline w-5" src="https://play-lh.googleusercontent.com/Yoaqip2U7E9EKghfvnZW1OeanfbjaL3Qqn5TGVDYAqkbXsL3TDNyEp_oBPH5vAPro38">
             토스뱅크 통장
         </h3>
         <p class="text-sm font-normal text-gray-500">하루만 넣어도 이자가 쌓이는 통장.</p>

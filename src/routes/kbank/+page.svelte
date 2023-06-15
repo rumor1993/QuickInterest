@@ -11,6 +11,7 @@
 <section>
     <div class="m-auto mt-5 w-full max-w-sm p-4 bg-white sm:p-6">
         <h3 class="text-2xl mb-3 text-base font-semibold text-gray-900 md:text-xl">
+            <img class="w-5 inline" src="https://play-lh.googleusercontent.com/nfphbnXEbNaL_BqRrU97IWCEnuHz6rBE5VHztahXk4cDE3Ag8MxRImhfF9plwrtylLg=w240-h480-rw">
             케이뱅크 (플러스박)
         </h3>
         <p class="text-sm font-normal text-gray-500">금리부터 한도까지 파킹통장 그 이상</p>

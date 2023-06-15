@@ -11,6 +11,7 @@
 <section>
     <div class="m-auto mt-5 w-full max-w-sm p-4 bg-white sm:p-6">
         <h3 class="text-2xl mb-3 text-base font-semibold text-gray-900 md:text-xl">
+            <img class="inline w-5" src="https://t1.daumcdn.net/cfile/tistory/997BD7335D089C3023">
             카카오뱅크 (세이프박스)
         </h3>
         <p class="text-sm font-normal text-gray-500">계좌마다 하나씩 세이프박스를 만들어
