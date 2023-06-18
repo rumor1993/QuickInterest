@@ -12,8 +12,8 @@
 
 
 <section>
-    <div class="m-auto mt-5 w-full max-w-sm p-4 bg-white sm:p-6">
-        <h3 class="text-2xl mb-3 text-base font-semibold text-gray-900 md:text-xl">
+    <div class="m-auto mt-5 w-full max-w-sm p-4 bg-white">
+        <h3 class="text-xl mb-3 font-semibold text-gray-900">
             <img class="inline w-5" src="{calculator}">
             커스텀 이자 계산기
         </h3>
