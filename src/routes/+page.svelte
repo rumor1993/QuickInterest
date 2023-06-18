@@ -1,15 +1,25 @@
+<script>
+	import calculator from '$lib/images/calculator.png';
+</script>
+
 <section>
 	<div class="m-auto mt-5 w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6">
 		<h1 class="mb-3 text-base font-semibold text-gray-900 md:text-xl">
 			이자 계산기
 		</h1>
-		<p class="text-sm font-normal text-gray-500">‘파킹통장’은 Parking(주차)와 통장의 합성어로, 차를 잠시 주차하듯 언제든지 돈을 넣었다 뺄 수 있는 통장이다.</p>
+		<p class="text-sm font-normal text-gray-500">쉽고 빠른 계산으로 예금이자를 확인할 수 있습니다.</p>
 		<ul class="my-4 space-y-3">
+			<li>
+				<a href="/custom" class="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow">
+					<img class="w-5" src="{calculator}">
+					<span class="flex-1 ml-3 whitespace-nowrap">이자 계산기</span>
+					<span class="inline-flex items-center justify-center px-2 py-0.5 ml-3 text-xs font-medium text-gray-500 bg-gray-200 rounded">Popular</span>
+				</a>
+			</li>
 			<li>
 				<a href="/toss" class="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow">
 					<img class="w-5" src="https://play-lh.googleusercontent.com/Yoaqip2U7E9EKghfvnZW1OeanfbjaL3Qqn5TGVDYAqkbXsL3TDNyEp_oBPH5vAPro38">
 					<span class="flex-1 ml-3 whitespace-nowrap">토스뱅크</span>
-					<span class="inline-flex items-center justify-center px-2 py-0.5 ml-3 text-xs font-medium text-gray-500 bg-gray-200 rounded">Popular</span>
 				</a>
 			</li>
 			<li>
@@ -24,12 +34,6 @@
 					<span class="flex-1 ml-3 whitespace-nowrap">케이뱅크</span>
 				</a>
 			</li>
-			<!--<li>
-				<a href="#" class="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow">
-					<img class="w-5" src="https://play-lh.googleusercontent.com/MHcnAJN4aqVymRwBjS5TOQ5WvPFHoKgG6cgRkWICXJDfAq94vMbX9r90BWcg0nosAoAJ=w240-h480-rw">
-					<span class="flex-1 ml-3 whitespace-nowrap">수협은행</span>
-				</a>
-			</li>-->
 		</ul>
 		<div>
 			<a href="#" class="inline-flex items-center text-xs font-normal text-gray-500 hover:underline">

@@ -1,0 +1,24 @@
+<script>
+    import Calculator from "../../lib/utils/Calculator.svelte";
+    import calculator from '$lib/images/calculator.png';
+
+    let visible = false
+    let interestRate = 0
+    let interest = 0
+    let incomeTax = 0
+    let localTax = 0
+    let isCustom = true
+</script>
+
+
+<section>
+    <div class="m-auto mt-5 w-full max-w-sm p-4 bg-white sm:p-6">
+        <h3 class="text-2xl mb-3 text-base font-semibold text-gray-900 md:text-xl">
+            <img class="inline w-5" src="{calculator}">
+            커스텀 이자 계산기
+        </h3>
+        <p class="text-sm font-normal text-gray-500">예치금, 이자, 금리구간등을 설정하여서 간편하게 이자와 세금을 제외한 이자 또한 손쉽게 확인 할 수 있습니다.</p>
+    </div>
+
+    <Calculator bind:visible bind:interestRate bind:interest bind:incomeTax bind:localTax bind:isCustom></Calculator>
+</section>

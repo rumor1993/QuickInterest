@@ -6,12 +6,18 @@
 
     export let visible = false
     export let interestRate = 0.02
+    export let customRate = 0
     export let interest = 0
     export let incomeTax = 0
     export let localTax = 0
+    export let isCustom = false;
 
 
     function changeDeposit() {
+        if (customRate != 0) {
+            interestRate = customRate / 100
+        }
+
         if (!isNumber(Number(deposit.replaceAll(',', '')))) {
             visible = true
             deposit = '';
@@ -80,7 +86,15 @@
             <input type="text" id="default_standard" bind:value={deposit} on:keyup={changeDeposit} class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " />
             <label for="default_standard" class="absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">예치금액</label>
         </div>
+
+        {#if isCustom}
+            <div class="relative z-0 mb-5">
+                <input type="number" id="default_custom" bind:value={customRate} on:change={changeDeposit} on:keyup={changeDeposit} class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " />
+                <label for="default_custom" class="absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">이자율(%)</label>
+            </div>
+        {/if}
     </div>
+
 
     <div class="mt-2">
         <p class="text-right text-gray-500 ">{interest}</p>
