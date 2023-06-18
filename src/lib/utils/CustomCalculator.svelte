@@ -6,7 +6,7 @@
 
     export let visible = false
     export let interestRate = 0
-    export let customRate = 0
+    export let customRate;
     export let interest = 0
     export let incomeTax = 0
     export let localTax = 0
