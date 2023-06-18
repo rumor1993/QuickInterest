@@ -126,7 +126,6 @@
         <hr class="h-px my-2 bg-gray-200 border-0">
     </div>
 
-
     <div class="mt-2">
         <p class="text-right text-gray-500 ">{interest}</p>
         <p class="text-xs text-right text-gray-500 ">이자 (세전)</p>
