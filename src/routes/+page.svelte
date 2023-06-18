@@ -18,7 +18,7 @@
 			</li>
 		</ul>
 
-		<hr class="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700">
+		<hr class="h-px my-8 bg-gray-200 border-0">
 
 		<h3 class="mb-3 text-base font-semibold text-gray-900">
 			파킹 통장
