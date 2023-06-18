@@ -1,8 +1,8 @@
 <section>
 	<div class="m-auto mt-5 w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6">
-		<h5 class="mb-3 text-base font-semibold text-gray-900 md:text-xl">
-			파킹 통장 이자 계산기
-		</h5>
+		<h1 class="mb-3 text-base font-semibold text-gray-900 md:text-xl">
+			이자 계산기
+		</h1>
 		<p class="text-sm font-normal text-gray-500">‘파킹통장’은 Parking(주차)와 통장의 합성어로, 차를 잠시 주차하듯 언제든지 돈을 넣었다 뺄 수 있는 통장이다.</p>
 		<ul class="my-4 space-y-3">
 			<li>
