@@ -10,9 +10,17 @@
 		<p class="text-sm font-normal text-gray-500">쉽고 빠른 계산으로 예금이자를 확인할 수 있습니다.</p>
 		<ul class="my-4 space-y-3">
 			<li>
-				<a href="/custom" class="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow">
+				<a href="/custom/day" class="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow">
 					<img class="w-5" src="{calculator}">
-					<span class="flex-1 ml-3 whitespace-nowrap">이자 계산기</span>
+					<span class="flex-1 ml-3 whitespace-nowrap">이자 계산기 <span class="text-sm text-blue-600">(일)</span></span>
+					<span class="inline-flex items-center justify-center px-2 py-0.5 ml-3 text-xs font-medium text-gray-500 bg-gray-200 rounded">Popular</span>
+				</a>
+			</li>
+
+			<li>
+				<a href="/custom/month" class="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow">
+					<img class="w-5" src="{calculator}">
+					<span class="flex-1 ml-3 whitespace-nowrap">이자 계산기 <span class="text-sm text-blue-600">(월)</span></span>
 					<span class="inline-flex items-center justify-center px-2 py-0.5 ml-3 text-xs font-medium text-gray-500 bg-gray-200 rounded">Popular</span>
 				</a>
 			</li>

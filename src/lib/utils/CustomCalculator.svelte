@@ -10,6 +10,9 @@
     export let interest = 0
     export let incomeTax = 0
     export let localTax = 0
+    export let isMonth = false
+
+    let month;
     let day = 0
 
     const getDateDiff = () => {
@@ -19,6 +22,11 @@
         const diffDate = date1.getTime() - date2.getTime();
 
         return Math.abs(diffDate / (1000 * 60 * 60 * 24)); // 밀리세컨 * 초 * 분 * 시 = 일
+    }
+
+    function selectMonth(selectedMonth) {
+        month = selectedMonth
+        changeDeposit()
     }
 
     function changeDate() {
@@ -56,7 +64,11 @@
     }
 
     function calculateInterest() {
-        interest = Number(deposit.replaceAll(',', '')) * interestRate / 365 * day
+        if (isMonth) {
+            interest = Number(deposit.replaceAll(',', '')) * interestRate * month / 12
+        } else {
+            interest = Number(deposit.replaceAll(',', '')) * interestRate / 365 * day
+        }
         interest = interest.toLocaleString('ko-KR');
     }
 
@@ -92,7 +104,7 @@
     {/if}
 
     <h5 class="mb-5 text-base font-semibold text-gray-900 md:text-base">
-        <div class="">📠 이자 계산기</div>
+        <div class="">📠 이자 계산기 ({isMonth ? "월단위" : "일단위"})</div>
     </h5>
 
     <div class="grid items-end gap-6">
@@ -106,23 +118,44 @@
             <label for="default_custom" class="absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">이자율(%)</label>
         </div>
 
-        <div class="text-sm text-gray-500">예·적금기간</div>
-        <div date-rangepicker datepicker-autohide class="flex items-center">
-            <div class="relative">
-                <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-                    <svg aria-hidden="true" class="w-5 h-5 text-gray-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path></svg>
+        {#if !isMonth}
+            <div class="text-sm text-gray-500">예·적금기간</div>
+
+            <div date-rangepicker datepicker-autohide class="flex items-center">
+                <div class="relative">
+                    <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                        <svg aria-hidden="true" class="w-5 h-5 text-gray-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path></svg>
+                    </div>
+                    <input id="startDate" name="start" on:changeDate={changeDate} type="text" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5"
+                           placeholder="시작일">
                 </div>
-                <input id="startDate" name="start" on:changeDate={changeDate} type="text" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5"
-                       placeholder="시작일">
-            </div>
-            <span class="mx-4 text-gray-500">-</span>
-            <div class="relative">
-                <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-                    <svg aria-hidden="true" class="w-5 h-5 text-gray-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path></svg>
+                <span class="mx-4 text-gray-500">-</span>
+                <div class="relative">
+                    <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                        <svg aria-hidden="true" class="w-5 h-5 text-gray-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path></svg>
+                    </div>
+                    <input id="endDate" name="end" on:changeDate={changeDate} type="text" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5" placeholder="종료일">
                 </div>
-                <input id="endDate" name="end" on:changeDate={changeDate} type="text" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5" placeholder="종료일">
             </div>
-        </div>
+        {/if}
+
+        {#if isMonth}
+            <div class="relative z-0">
+                <input type="number" id="default_month" bind:value={month} on:change={changeDeposit} on:keyup={changeDeposit} class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " />
+                <label for="default_month" class="absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">개월</label>
+            </div>
+
+            <span class="mx-auto">
+                <button on:click={selectMonth.bind(null, 1)} class="inline hover:text-blue-300 focus:text-blue-300 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg px-2 py-1.5 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg">1개월</button>
+                <button on:click={selectMonth.bind(null, 3)} class="inline hover:text-blue-300 focus:text-blue-300 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg px-2 py-1.5 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg">3개월</button>
+                <button on:click={selectMonth.bind(null, 4)} class="inline hover:text-blue-300 focus:text-blue-300 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg px-2 py-1.5 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg">4개월</button>
+                <button on:click={selectMonth.bind(null, 5)} class="inline hover:text-blue-300 focus:text-blue-300 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg px-2 py-1.5 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg">5개월</button>
+                <button on:click={selectMonth.bind(null, 6)} class="inline hover:text-blue-300 focus:text-blue-300 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg px-2 py-1.5 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg">6개월</button>
+                <button on:click={selectMonth.bind(null, 12)} class="inline hover:text-blue-300 focus:text-blue-300 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg px-2 py-1.5 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg">1년</button>
+                <button on:click={selectMonth.bind(null, 24)} class="inline hover:text-blue-300 focus:text-blue-300 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg px-2 py-1.5 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg">2년</button>
+            </span>
+        {/if}
+
         <hr class="h-px my-2 bg-gray-200 border-0">
     </div>
 
