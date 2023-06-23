@@ -1,5 +1,4 @@
 <script>
-    import Calculator from "../../../lib/utils/Calculator.svelte";
     import calculator from '$lib/images/calculator.png';
     import CustomCalculator from "../../../lib/utils/CustomCalculator.svelte";
 
