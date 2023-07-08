@@ -28,6 +28,17 @@
 
 		<hr class="h-px my-8 bg-gray-200 border-0">
 
+		<ins class="kakao_ad_area" style="display:none;"
+                    data-ad-unit="ADUNIT_ID"  //AdFit에서 발급 받은 광고단위코드 값
+                    data-ad-width="250"  // 광고단위 가로 사이즈
+                    data-ad-height="250"  // 광고단위 세로 사이즈
+                    data-ad-onfail="callBackFunc"</ins>
+
+            <script async type="text/javascript" charset="utf-8" src="https://t1.daumcdn.net/kas/static/ba.min.js">
+            </script>
+
+		<hr class="h-px my-8 bg-gray-200 border-0">
+
 		<h3 class="mb-3 text-base font-semibold text-gray-900">
 			파킹 통장
 		</h3>
