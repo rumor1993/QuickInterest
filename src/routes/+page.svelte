@@ -18,7 +18,7 @@
 			</li>
 
 			<li>
-				<a href="/custom/month" class="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow">
+				<a on:click={() => location.href="/custom/month"} class="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow">
 					<img class="w-5" src="{calculator}">
 					<span class="flex-1 ml-3 whitespace-nowrap">이자 계산기 <span class="text-sm text-blue-600">(월)</span></span>
 					<span class="inline-flex items-center justify-center px-2 py-0.5 ml-3 text-xs font-medium text-gray-500 bg-gray-200 rounded">Popular</span>
@@ -32,7 +32,6 @@
         data-ad-unit = "DAN-biusmlMB8b29bjEK"
         data-ad-width = "320"
         data-ad-height = "50"></ins>
-        <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
 
 		<hr class="h-px my-8 bg-gray-200 border-0">
 
@@ -42,19 +41,19 @@
 		<p class="text-xs font-normal text-gray-500">‘파킹통장’은 Parking(주차)와 통장의 합성어로, 차를 잠시 주차하듯 언제든지 돈을 넣었다 뺄 수 있는 통장이다.</p>
 		<ul class="my-4 space-y-3">
 			<li>
-				<a href="/toss" class="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow">
+				<a on:click={() => location.href="/toss"} class="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow">
 					<img class="w-5" src="https://play-lh.googleusercontent.com/Yoaqip2U7E9EKghfvnZW1OeanfbjaL3Qqn5TGVDYAqkbXsL3TDNyEp_oBPH5vAPro38">
 					<span class="flex-1 ml-3 whitespace-nowrap">토스뱅크</span>
 				</a>
 			</li>
 			<li>
-				<a href="/kakao" class="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow">
+				<a on:click={() => location.href="/kakao"} class="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow">
 					<img class="w-5" src="https://t1.daumcdn.net/cfile/tistory/997BD7335D089C3023">
 					<span class="flex-1 ml-3 whitespace-nowrap">카카오뱅크</span>
 				</a>
 			</li>
 			<li>
-				<a href="/kbank" class="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow">
+				<a on:click={() => location.href="/kbank"} class="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow">
 					<img class="w-5" src="https://play-lh.googleusercontent.com/nfphbnXEbNaL_BqRrU97IWCEnuHz6rBE5VHztahXk4cDE3Ag8MxRImhfF9plwrtylLg=w240-h480-rw">
 					<span class="flex-1 ml-3 whitespace-nowrap">케이뱅크</span>
 				</a>

@@ -101,4 +101,12 @@
         <sapn class="text-lg text-right font-bold">총 이자</sapn>
         <span class="text-lg text-left font-bold">{total} 원</span>
     </div>
+
+
+    	<hr class="h-px my-8 bg-gray-200 border-0">
+
+            <ins class="kakao_ad_area" style="display:none;"
+            data-ad-unit = "DAN-tY6hOWsFd3W9DuFe"
+            data-ad-width = "320"
+            data-ad-height = "100"></ins>
 </div>
