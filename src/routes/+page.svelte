@@ -28,14 +28,11 @@
 
 		<hr class="h-px my-8 bg-gray-200 border-0">
 
-		<ins class="kakao_ad_area" style="display:none;"
-                    data-ad-unit="ADUNIT_ID"  //AdFit에서 발급 받은 광고단위코드 값
-                    data-ad-width="250"  // 광고단위 가로 사이즈
-                    data-ad-height="250"  // 광고단위 세로 사이즈
-                    data-ad-onfail="callBackFunc"</ins>
-
-            <script async type="text/javascript" charset="utf-8" src="https://t1.daumcdn.net/kas/static/ba.min.js">
-            </script>
+        <ins class="kakao_ad_area" style="display:none;"
+        data-ad-unit = "DAN-biusmlMB8b29bjEK"
+        data-ad-width = "320"
+        data-ad-height = "50"></ins>
+        <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
 
 		<hr class="h-px my-8 bg-gray-200 border-0">
 

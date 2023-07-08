@@ -38,4 +38,10 @@
         <div class="mt-2 text-xs text-gray-500">※ 금액구간 및 금리는 시장 상황 및 회사 사정에 따라 변동될 수 있으며, 변동된 경우 변동일로부터 변경된 금액구간 및 금리를 적용합니다.</div>
     </div>
 
+    <ins class="kakao_ad_area" style="display:none;"
+    data-ad-unit = "DAN-biusmlMB8b29bjEK"
+    data-ad-width = "320"
+    data-ad-height = "50"></ins>
+    <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+
 </section>
