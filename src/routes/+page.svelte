@@ -1,5 +1,6 @@
 <script>
 	import calculator from '$lib/images/calculator.png';
+	import Adfit from "./custom/Adfit.svelte";
 </script>
 
 <section>
@@ -28,10 +29,7 @@
 
 		<hr class="h-px my-8 bg-gray-200 border-0">
 
-        <ins class="kakao_ad_area" style="display:none;"
-        data-ad-unit = "DAN-biusmlMB8b29bjEK"
-        data-ad-width = "320"
-        data-ad-height = "50"></ins>
+      	<Adfit></Adfit>
 
 		<hr class="h-px my-8 bg-gray-200 border-0">
 
