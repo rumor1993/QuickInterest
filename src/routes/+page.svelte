@@ -29,7 +29,7 @@
 
 		<hr class="h-px my-8 bg-gray-200 border-0">
 
-      	<Adfit></Adfit>
+		<Adfit></Adfit>
 
 		<hr class="h-px my-8 bg-gray-200 border-0">
 

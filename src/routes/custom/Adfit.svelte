@@ -11,8 +11,8 @@
         const winodwSize = window.innerWidth;
         if (winodwSize < 1024) {
             ins.setAttribute('data-ad-width', '320');
-            ins.setAttribute('data-ad-height', '100');
-            ins.setAttribute('data-ad-unit', '320x100 사이즈의 광고 ID');
+            ins.setAttribute('data-ad-height', '50');
+            ins.setAttribute('data-ad-unit', 'DAN-biusmlMB8b29bjEK');
         } else {
             ins.setAttribute('data-ad-width', '728');
             ins.setAttribute('data-ad-height', '90');
