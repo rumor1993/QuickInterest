@@ -1,6 +1,7 @@
 <script>
     import Calculator from "../../lib/utils/Calculator.svelte";
     import Adfit from "../custom/Adfit.svelte";
+    import AdfitBig from "../custom/AdfitBig.svelte";
 
     let visible = false
     let interestRate = 0.022
@@ -40,8 +41,5 @@
         <div class="mt-2 text-xs text-gray-500">※ 금액구간 및 금리는 시장 상황 및 회사 사정에 따라 변동될 수 있으며, 변동된 경우 변동일로부터 변경된 금액구간 및 금리를 적용합니다.</div>
 
         	<hr class="h-px my-8 bg-gray-200 border-0">
-
-
-        <Adfit></Adfit>
     </div>
 </section>

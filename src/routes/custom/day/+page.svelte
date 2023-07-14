@@ -21,8 +21,5 @@
     </div>
 
     <CustomCalculator bind:visible bind:interestRate bind:interest bind:incomeTax bind:localTax></CustomCalculator>
-
-    	<hr class="h-px my-8 bg-gray-200 border-0">
-
-    <Adfit></Adfit>
+    <hr class="h-px my-8 bg-gray-200 border-0">
 </section>

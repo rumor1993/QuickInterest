@@ -1,6 +1,7 @@
 <script>
     import {fade} from 'svelte/transition';
     import Adfit from "../../routes/custom/Adfit.svelte";
+    import AdfitBig from "../../routes/custom/AdfitBig.svelte";
 
     let deposit;
     let total = 0
@@ -180,5 +181,5 @@
 
     	<hr class="h-px my-8 bg-gray-200 border-0">
 
-    <Adfit></Adfit>
+    <AdfitBig></AdfitBig>
 </div>
