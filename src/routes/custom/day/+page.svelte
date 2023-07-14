@@ -1,6 +1,7 @@
 <script>
     import calculator from '$lib/images/calculator.png';
     import CustomCalculator from "../../../lib/utils/CustomCalculator.svelte";
+    import Adfit from "../Adfit.svelte";
 
     let visible = false
     let interestRate = 0
@@ -23,8 +24,5 @@
 
     	<hr class="h-px my-8 bg-gray-200 border-0">
 
-            <ins class="kakao_ad_area" style="display:none;"
-            data-ad-unit = "DAN-tY6hOWsFd3W9DuFe"
-            data-ad-width = "320"
-            data-ad-height = "100"></ins>
+    <Adfit></Adfit>
 </section>

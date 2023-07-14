@@ -28,4 +28,4 @@
     })
 </script>
 
-<aside className="aside__kakaoAdFit"></aside>
+<aside class="aside__kakaoAdFit"></aside>
